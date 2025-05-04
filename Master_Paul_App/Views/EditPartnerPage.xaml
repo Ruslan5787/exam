@@ -1,0 +1,67 @@
+﻿<Window x:Class="Master_Paul_App.Views.EditPartnerPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Master_Paul_App.Views" xmlns:sys="http://schemas.microsoft.com/winfx/2009/xaml"
+        mc:Ignorable="d"
+        FontFamily="Segoe UI"
+FontSize="16"
+        Title="Мастер Пол" Height="600" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DockPanel Margin="20 0 20 0">
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 5 0 20" DockPanel.Dock="Top">
+                <Image Margin="0 0 30 0" HorizontalAlignment="Left" Width="70" Source="D:\programming\CS projects\partners-master\partners-master\Master_Paul_App\Images\Мастер пол.png" />
+                <TextBlock VerticalAlignment="Center" Text="Список партнеров" FontSize="20" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="Наименование"  />
+                    <TextBox x:Name="NameInput" />
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="Тип партнера" />
+                    <ComboBox x:Name="TypeCompanyComboBox">
+                        <TextBlock>ЗАО</TextBlock>
+                        <TextBlock>ООО</TextBlock>
+                        <TextBlock>ПАО</TextBlock>
+                        <TextBlock>ОАО</TextBlock>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="Рейтинг" />
+                    <TextBox x:Name="RatingInput" />
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="Адрес" />
+                    <TextBox x:Name="AdressInput" />
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="ФИО директора" />
+                    <TextBox x:Name="FioInput" />
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 5">
+                    <TextBlock Margin="0 0 0 5" Text="Телефон" />
+                    <TextBox x:Name="PhoneInput" />
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 20">
+                    <TextBlock Margin="0 0 0 5" Text="Email" />
+                    <TextBox x:Name="EmailInput" />
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Background="#67BA80" BorderBrush="Transparent" Padding="15 5" Margin="0 0 20 0" Click="ButtonClick1">Сохранить</Button>
+                    <Button Background="#67BA80" BorderBrush="Transparent" Padding="15 5" Click="ButtonClick">Отменить</Button>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
